@@ -1,0 +1,465 @@
+{
+
+    "ef664e72-61-c2-43-c0-dscd7-abf0410bbbc5": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-20 00:00:00",
+        "auto_renewal": false,
+        "name": "qweQWE123",
+        "billing": "4",
+        "created": "2015-07-20 14:57:38",
+        "auto_renewal_at": "2015-08-14 10:00:00 到期",
+        "download_bandwidth": 1,
+        "image_name": "CentOS 5.11 64bit",
+        "full_flavor": {
+            "disk": 30,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.7",
+        "private_ip": "10.8.3.3",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "ef664e72-61-c2-43-c0-acd7-abf0410bbbc5": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-20 00:00:00",
+        "auto_renewal": false,
+        "name": "qweQWE123",
+        "billing": "4",
+        "created": "2015-07-20 14:57:38",
+        "auto_renewal_at": "2015-08-14 10:00:00 到期",
+        "download_bandwidth": 1,
+        "image_name": "CentOS 5.11 64bit",
+        "full_flavor": {
+            "disk": 30,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.7",
+        "private_ip": "10.8.3.3",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "f4dd56f4-f2e3-48-f7-8-f6f-e28933350ac8": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "1112RRR22e",
+        "billing": "",
+        "created": "2015-07-22 18:06:28",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 4,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.28",
+        "private_ip": "10.8.3.10",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": 1
+    },
+    "f813eb68-8-fee-434-a-a1ed-ee289a1fbb02": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "qqqWW2222",
+        "billing": "4",
+        "created": "2015-07-22 18:02:48",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.18 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 2048
+        },
+        "public_ip": "173.0.0.27",
+        "private_ip": "10.8.3.9",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "5e969-d11-bc55-4e8-d-a72d-a4a3a11548bc": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-ykb9guss",
+        "billing": "",
+        "created": "2015-07-22 17:50:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 6.11 64bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 8,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.26",
+        "private_ip": "10.8.3.8",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "a33ffd0a-fc46-410-b-817-b-f56c114ab60f": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-7898huct",
+        "billing": "4",
+        "created": "2015-07-22 14:46:42",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.18",
+        "private_ip": "10.8.3.7",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "b80704b-ce03-4-cbb-a79a-0-cd2e9f94078": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-s6q7k7rb",
+        "billing": "4",
+        "created": "2015-07-22 20:07:40",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 100,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.32",
+        "private_ip": "10.8.3.12",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "c8f47d-e8c7-46-f1-aceb-0-b1ee2e68e9b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "ef664e72-61-c2-43-c0-acd7-abf0410bbbc3": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-20 00:00:00",
+        "auto_renewal": false,
+        "name": "qweQWE123",
+        "billing": "4",
+        "created": "2015-07-20 14:57:38",
+        "auto_renewal_at": "2015-08-14 10:00:00 到期",
+        "download_bandwidth": 1,
+        "image_name": "CentOS 5.11 64bit",
+        "full_flavor": {
+            "disk": 30,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.7",
+        "private_ip": "10.8.3.3",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "f4dd56f4-f2e3-48-f7-8-f6f-e28933350ac5": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "1112RRR22e",
+        "billing": "",
+        "created": "2015-07-22 18:06:28",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 4,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.28",
+        "private_ip": "10.8.3.10",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": 1
+    },
+    "f813eb68-8-fee-434-a-a1ed-ee289a1fbb06": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "qqqWW2222",
+        "billing": "4",
+        "created": "2015-07-22 18:02:48",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.18 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 2048
+        },
+        "public_ip": "173.0.0.27",
+        "private_ip": "10.8.3.9",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "5e969-d11-bc55-4e8-d-a72d-a4a3a11548b7": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-ykb9guss",
+        "billing": "",
+        "created": "2015-07-22 17:50:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 6.11 64bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 8,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.26",
+        "private_ip": "10.8.3.8",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "a33ffd0a-fc46-410-b-817-b-f56c114ab60e": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-7898huct",
+        "billing": "4",
+        "created": "2015-07-22 14:46:42",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.18",
+        "private_ip": "10.8.3.7",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "b80704b-ce03-4-cbb-a79a-0-cd2e9f94058": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": false,
+        "name": "Server-s6q7k7rb",
+        "billing": "4",
+        "created": "2015-07-22 20:07:40",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 100,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.32",
+        "private_ip": "10.8.3.12",
+        "upload_bandwidth": 1,
+        "task_state": null,
+        "renewal_bandwidth": null
+    },
+    "c8f47d-e8c7-46-f1-aceb-0-b1ef2e68e9b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c7-46-f1-aceb-0-b1ef2e68g9b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c7-46-f1-accb-0-b1ef2e6869b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c7-46-f1-acrb-0-b1ef2e6869b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c7-46-f1-acev-0-b1ef2e6869b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c7-46-f1-aceb-0-b1ef2e68609b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e6c7-46-f1-aceb-0-b1ef2e6869b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    },
+    "c8f47d-e8c4-46-f1-aceb-0-b1ef2e6869b": {
+        "status": "运行中",
+        "billing_expired_at": "2015-08-22 00:00:00",
+        "auto_renewal": true,
+        "name": "RR222434d",
+        "billing": "4",
+        "created": "2015-07-22 18:09:20",
+        "auto_renewal_at": "2015-08-16 10:00:00 到期",
+        "download_bandwidth": 100,
+        "image_name": "CentOS 5.11 32bit",
+        "full_flavor": {
+            "disk": 50,
+            "vcpus": 2,
+            "ram": 1024
+        },
+        "public_ip": "173.0.0.29",
+        "private_ip": "10.8.3.11",
+        "upload_bandwidth": 18,
+        "task_state": null,
+        "renewal_bandwidth": 18
+    }
+}

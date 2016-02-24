@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="tableself.css">
+    <link rel="stylesheet" type="text/css" href="add.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    li
+</head>
+<body>
+    <div id="wrapper" >
+        <div class="headbar">
+
+        </div>
+        <div class="side_bar" data-scroll-height="420px">
+              <ul class="user_center hidden">
+
+                <li class="glyphicons vcard index"><a href=""><span>账户充值</span></a></li>
+                <li class="glyphicons file index"><a href=""><span>充值记录</span></a></li>
+                <h3>账户消费</h3>
+                <li class="glyphicons credit_card index"><a href=""><span>消费记录</span></a></li>
+                <h3>发票管理</h3>
+                <li class="glyphicons glyphicon-money index"><a href=""><span>发票申请</span></a></li>
+                <li class="glyphicons glyphicon-company index"><a href=""><span>企业资料</span></a></li>
+            </ul>
+            <ul class="control_brand">
+                <div class="glyphicons">云主机</div>
+                <li class="glyphicons imac index"><a href=""><span>云主机</span></a>
+                </li>
+                <li class="glyphicons more_windows index "><a href=""><span>镜像</span></a>
+                </li>
+                <li class="glyphicons bin index"><a href=""><span>回收站</span></a>
+                </li>
+                <div class="glyphicons">CDN</div>
+                <li class="glyphicons cloud-upload index"><a href=""><span>站点管理</span></a></li>
+                <li class="glyphicons charts index"><a href=""><span>历史数据</span></a></li>
+                <li class="glyphicons download index"><a href=""><span>日志下载</span></a></li>
+                <div class="glyphicons">Bucket</div>
+                <li class="glyphicons bucket index"><a href=""><span>Bucket管理</span></a></li>
+                <li class="glyphicons object index"><a href=""><span>Object管理</span></a></li>
+                <li class="glyphicons task-upload index hide"><a href=""><span>上传任务<span class="badge" style="text-indent: 0;margin-left: 20px"></span></span></a></li>
+                <div class="glyphicons">RDS</div>
+                <li class="glyphicons cloud-upload index"><a href=""><span>数据库管理</span></a></li>
+            </ul>
+        </div>
+        <div class="table_wrapper">
+            <table id="example">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th><input type="checkbox" name="" id=""></th>
+                        <th>名称</th>
+                        <th>IP地址</th>
+                        <th>配置</th>
+                        <th>镜像</th>
+                        <th>状态</th>
+                        <th>起始时间</th>
+                        <th>计费方式</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th><input type="checkbox" name="" id=""></th>
+                        <th>名称</th>
+                        <th>IP地址</th>
+                        <th>配置</th>
+                        <th>镜像</th>
+                        <th>状态</th>
+                        <th>起始时间</th>
+                        <th>计费方式</th>
+                        <th>操作</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- 名称模板 -->
+    <script type="text/x-handlebars-template" id="td-name-template">
+        <a class="name" href="/project/monitor/{{id}}/monitoring" title="">{{name}}</a>
+    </script>
+
+    <!-- IP模板 -->
+    <script type="text/x-handlebars-template" id="td-ip-template">
+         <div class="ipOuter"> <strong>内网：</strong> <span class="innerIP">{{private_ip}}</span></div>
+         <div class="ipOuter"> <strong>外网：</strong> <span class="outerIP">{{public_ip}}</span></div>
+    </script>
+
+    <!-- 配置模板 -->
+    <script type="text/x-handlebars-template" id="td-showInfo-template">
+        <div class="show_info">
+        <div><strong>CPU: </strong><span class="origin-vcpus" data-originvcpus="4">{{cpu}} 核</span></div>
+            <div><strong>内存: </strong> <span class="origin-ram" data-originram="4096">{{ram}}MB</span></div>
+        </div>
+        <div class="show_info">
+            <div><strong>硬盘: </strong><span class="origin-disk" data-origindisk="50">{{disk}}GB</span> </div>
+            <div><strong>带宽: </strong><span class="origin-bandwidth" data-originband="1">{{upload_bandwidth}}Mbps</span></div>
+        </div>
+    </script>
+
+    <!-- 功能模板 -->
+    <script type="text/x-handlebars-template"  id="td-operation-template">
+        <div class="btn-group" style="float: right">
+             <button type="button" style="padding:2px 6px;" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-backdrop="static">
+                更多<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu operate-menu instance-dropdown" role="menu">
+                {{#each more_operation}}
+                <li><a class="{{operation_class}}" data-id="{{operation_id}}" data-toggle="modal" data-target="{{operation_target}}" data-backdrop="static"><i class="{{operation_faclass}}" ></i>{{operation_name}}</a></li>
+                {{/each}}
+            </ul>
+            <a class="instance_reboot operate-option" data-id="2e137731-2a2e-4e36-971d-856855e5308d" data-toggle="modal" data-backdrop="static" data-target="#rebootModal"><i class="fa fa-repeat"></i>重启</a>
+            {{#if ifcost}}
+            <a class="operate-option renewbtn" data-toggle="modal" data-backdrop="static" data-target="#renewModal" data-id="8f0b3b7b-dca5-4900-9aab-c5b9e816fc4b"><i class="fa fa-jpy"></i>续费</a>
+            {{/if}}
+        </div>
+    </script>
+
+    <!-- 镜像模板 -->
+    <script type="text/x-handlebars-template" id="td-image-template" >
+        <div title="{{image}}" class="image text_nowrap image-width" data-ostype="ubuntu">{{image}}</div>
+    </script>
+
+    <!-- 状态模板 -->
+    <script type="text/x-handlebars-template" id="td-status-template">
+        <div class="status">{{status}}</div>
+    </script>
+
+    <!-- 日期模板 -->
+    <script type="text/x-handlebars-template" id="td-date-template">
+        <div class="date">{{date}}</div>
+    </script>
+
+    <!-- 消费模板 -->
+    <script type="text/x-handlebars-template" id="td-cost-template">
+        <div class="cost">{{cost}}</div>
+    </script>
+
+    <!-- 创建云主机按钮 -->
+    <script type="text/x-handlebars-template" id="create-instance-template">
+        <div class="createcloud btn btn-warning" style="float:left;"><i class="fa fa-plus"></i>创建云主机</div>
+    </script>
+
+    <!-- 批量模板 -->
+    <script type="text/x-handlebars-template" id="bat-function-template">
+        <div class="div">
+            {{#each bat_function}}
+            <a class="{{bat_function_class}}" data-toggle="modal" data-target="{{bat_function_modal}}" data-backdrop="static">{{bat_function_name}}</a>
+            {{/each}}
+        </div>
+    </script>
+
+    <!-- 进度条 -->
+    <script type="text/x-handlebars-template" id="bar-load-template">
+        {{!-- <span style="float:left;margin-left:40%;">正在加载中...</span> --}}
+        <div class="wrapper1">
+            <div class="bar">
+                <span class="bar-unfill">loading....
+                    <span class="bar-fill">
+                        <span class="track-wrap">
+                            <span class="track"></span>
+                        </span>
+                   </span>
+                </span>
+           </div>
+        </div>
+    </script>
+</body>
+    <script src="jquery.js"></script>
+    <script src="jquery.dataTables.js"></script>
+    <script src="DT_bootstrap.js"></script>
+    <script src="handlebars-v3.0.3.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="checkbox.js"></script>
+    <script src="add.js"></script>
+</html>

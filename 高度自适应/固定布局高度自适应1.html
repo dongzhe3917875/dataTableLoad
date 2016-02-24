@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 960px;
+            margin:0 auto;
+            /*overflow: hidden;*/
+        }
+        #rightWrap {
+            width: 100%;
+            float: left;
+            background-color: green;
+            overflow: hidden;
+            position: relative;
+        }
+        #contentWrap {
+            z-index: 2;
+            width: 100%;
+            float: left;
+            background-color: orange;
+            position: relative;
+            right: 320px;
+        }
+        #leftWrap {
+            width: 100%;
+            float: left;
+            background-color: lime;
+            position: relative;
+            right: 420px;
+        }
+        .left_sidebar {
+            float: left;
+            width: 220px;
+            overflow: hidden;
+            position:relative;
+            left: 740px;
+        }
+        .content {
+            float: left;
+            width: 420px;
+            overflow: hidden;
+            position:relative;
+            left: 740px;
+        }
+        .right_sidebar {
+            position: relative;
+            left: 740px;
+            float: left;
+            /*overflow: hidden;*/
+            width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="rightWrap">
+            <div id="contentWrap">
+                <div id="leftWrap">
+                    <div class="left_sidebar">12545454</div>
+                    <div class="content">1215454545</div>
+                    <div class="right_sidebar">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                        <p>6</p>
+                        <p>7</p>
+                        <p>8</p>
+                        <p>9</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                        <p>17</p>
+                        <p>18</p>
+                        <p>19</p>
+                        <p>20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

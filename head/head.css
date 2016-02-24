@@ -1,0 +1,86 @@
+div.head-bar {
+    height: 55px;
+    background-color: #2c9445;
+    width: 100%;
+}
+div.head-bar div {
+    display: inline-block;
+    vertical-align: top;
+}
+div.head-bar div.logo-gamecloud {
+    background: url("../images/360Cloud.png") center no-repeat;
+    height: 55px;
+    width: 133px;
+    margin-left:25px;
+}
+div.head-bar div.head-logo {
+    min-width: 410px;
+}
+div.head-bar div.logo-line {
+    background: url("../images/line.png") center no-repeat;
+    height: 55px;
+    width: 6px;
+    margin-left:25px;
+}
+div.head-bar div.logo-kaifang {
+    background: url("../images/gamelogo.png") center no-repeat;
+    height: 55px;
+    width: 181px;
+    margin-left:25px;
+}
+
+
+
+
+div.select-area{
+    width: auto;
+    min-width: 122px;
+}
+div.show_select_item{
+    border: 1px solid #ffffff;
+    height: 28px;
+    min-width:120px;
+    line-height: 28px;
+    margin-top: 13px;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+div.show_select_item::after{
+    content:"";
+    border-top: 10px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    position: absolute;
+    right:8px;
+    line-height: 28px;
+    vertical-align: middle;
+    top:11px;
+}
+div.show_select_item span{
+    padding-left: 15px;
+    padding-right: 30px;
+}
+div.select-area ul{
+    width: 100%;
+    border: 1px solid #ffffff;
+}
+div.select-area ul li{
+    background-color: #2c9445;
+    line-height: 28px;
+    height: 28px;
+    padding-top:5px;
+    color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+div.select-area ul li:last-child{
+    padding-bottom:5px;
+}
+div.select-area ul li:hover{
+    background-color: rgb(62,166,91);
+}

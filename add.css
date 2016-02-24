@@ -1,0 +1,199 @@
+div.wrapper {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+}
+#example {
+    width: 100%;
+}
+#example th {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+#example td {
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+div.ipOuter, div.ipInner {
+    display: none;
+}
+td div.ipOuter, td div.ipInner {
+    display: block;
+}
+td div.ipOuter strong {
+    padding-left: 10px;
+}
+div.ipOuter {
+  width: 150px;
+}
+td div.show_info {
+  display: inline-block;
+  text-align: left;
+}
+#example_wrapper div.row:nth-child(1){
+    margin-bottom: 10px;
+}
+#example_wrapper div.row:nth-child(1) div.col-md-6 {
+    width: auto;
+    float: right;
+}
+#example_wrapper div.row:nth-child(1) div.col-md-6:nth-child(1) {
+}
+#example_wrapper div.row:nth-child(1) div.col-md-6:nth-child(2) {
+    margin-right: 30px;
+}
+/* div.div{
+    display: inline-block;
+    float: left;
+} */
+#example_processing{
+    margin-top: 0;
+    padding-top: 0;
+    height: 25px;
+}
+.wrapper1 {
+    margin: 0 auto;
+}
+.bar{
+    margin: 0 auto;
+    width: 30%;
+    position: relative;
+}
+/* .title {
+    background-color: #545965;
+    color: #fff;
+    padding: 15px;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+} */
+.bar-unfill {
+    font-size: 12px;
+    position: relative;
+    height: 15px;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 8px;
+    z-index: 0;
+}
+.bar-fill {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    height: 15px;
+    display: block;
+    width: 0%;
+    border-radius: 8px;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(to top, rgb(43,194,83) 0%, rgb(84,240,84) 100%);
+}
+.bar-fill::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-45deg, rgba(255,255,255,.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.2) 50%, rgba(255,255,255,.2) 75%, transparent 75%, transparent 100%);
+    background-size: 25px 25px;
+    animation: progressbar 750ms infinite linear;
+}
+@-webkit-keyframes progressbar {
+    0% {
+        /*background-position 属性设置背景图像的起始位置*/
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 25px;
+    }
+}
+
+ .track-wrap {
+    z-index: 10;
+    position:relative;
+    top:-18px;
+    -webkit-animation:progressbar2 2s ease-out infinite;
+    animation:progressbar2 2s ease-out infinite;
+}
+
+.track {
+    top: 17px;
+    height:15px;
+    display:block;
+    background: #BCF5A9;
+    background-image: linear-gradient(90deg, rgba(226, 4, 22, 0) 10%, rgba(250, 6, 26, 0.8) 30%, #fb1f31 70%, rgba(250, 6, 26, 0.8) 80%, rgba(226, 4, 22, 0) 90%), linear-gradient(to right, rgba(251, 31, 49, 0) 0%, #fb1f31 100%), linear-gradient(to left, rgba(251, 31, 49, 0) 0%, #fb1f31 100%);
+    width:50px;
+    border-radius:5px;
+    position:relative;
+    left:-12px;
+    z-index:5;
+}
+
+ @-webkit-keyframes progressbar2 {
+    from {
+        left:0
+    }
+    to {
+        left:100%
+    }
+}
+div.table_wrapper {
+    float: left;
+    width: 100%;
+    border-left: 220px solid #f5f5f5;
+}
+div.side_bar {
+    margin-top: 70px;
+    float: left;
+    width: 220px;
+    margin-right: -220px;
+}
+.side_bar {
+    border-right: 1px solid #d0d0d0;
+    background-color: #f5f5f5;
+    min-height: 1080px;
+}
+.side_bar div.glyphicons {
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+.side_bar ul{
+    padding: 0px;
+}
+.side_bar ul h3 {
+    display: block;
+    font-size: 12px;
+}
+.side_bar ul li {
+    display: block;
+    list-style-type: none;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    /* transition的部分应该写在本体内 而不是hover */
+    transition: background-position 0.5s ease;
+}
+.side_bar ul li a{
+    text-decoration: none;
+}
+.side_bar ul li:hover {
+    /* background-color: #2c9445; */
+    background-image: linear-gradient(to left, #2c9445 0%, green 100%);
+    /* transition: background-color 1s ease; */
+    background-position: 220px;
+
+}
+.side_bar ul li:hover a{
+    color: #fff;
+}
+.side_bar ul li.glyphicons {
+    padding-left: 60px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="head/head.css">
+</head>
+<body>
+    <div class="wrapper"></div>
+    <script type="text/x-handlebars-template" id="cloud-head-template">
+        <div class="head-bar">
+            <div class="head-logo">
+                <div class="logo-gamecloud"></div>
+                <div class="logo-line"></div>
+                <div class="logo-kaifang"></div>
+            </div>
+            <div class="select-area"></div>
+            <div class="headbar-menu"></div>
+        </div>
+    </script>
+    <script type="text/x-handlebars-template" id="cloud-select-template">
+        <div class="show_select_item">
+            <span>上海-BGP1区</span>
+        </div>
+        <ul class="test-select">
+            {{#each options}}
+                <li class="select_item">{{this}}</li>
+            {{/each}}
+        </ul>
+    </script>
+</body>
+    <script src="jquery.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="handlebars-v3.0.3.js"></script>
+    <script src="head/head.js"></script>
+</html>

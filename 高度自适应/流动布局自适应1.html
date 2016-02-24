@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .container {
+            min-width: 1366px;
+        }
+        .container1 {
+            width: 100%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            background-color: green;
+        }
+        .container2 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: orange;
+            right: 30%;
+        }
+        .container3 {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-color: lime;
+            right: 50%;
+        }
+        .context1 {
+            padding: 2%;
+            float: left;
+            width: 16%;
+            min-width: 150px;
+            position: relative;
+            left: 80%;
+            overflow: hidden;
+        }
+        .context2 {
+            padding: 2%;
+            float: left;
+            width: 46%;
+            position: relative;
+            left: 80%;
+            overflow: hidden;
+        }
+        .context3 {
+            padding: 2%;
+            overflow: hidden;
+            float: left;
+            width: 26%;
+            position: relative;
+            left: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="container2">
+                <div class="container3">
+                    <div class="context1">
+                        <p>{1}</p>
+                        <p>{2}</p>
+                        <p>{3}</p>
+                        <p>{4}</p>
+                        <p>{5}</p>
+                        <p>{6}</p>
+                        <p>{7}</p>
+                        <p>{8}</p>
+                        <p>{9}</p>
+                        <p>{10}</p>
+                    </div>
+                    <div class="context2">2</div>
+                    <div class="context3">
+                        <p>01</p>
+                        <p>02</p>
+                        <p>03</p>
+                        <p>04</p>
+                        <p>05</p>
+                        <p>06</p>
+                        <p>07</p>
+                        <p>08</p>
+                        <p>09</p>
+                        <p>10</p>
+                        <p>11</p>
+                        <p>12</p>
+                        <p>13</p>
+                        <p>14</p>
+                        <p>15</p>
+                        <p>16</p>
+                        <p>17</p>
+                        <p>18</p>
+                        <p>19</p>
+                        <p>20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- div.container1>div.container2>div.container3>(div.context${$}*3) -->
