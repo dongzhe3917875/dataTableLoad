@@ -4,18 +4,21 @@ $(document).ready(function() {
         "bProcessing": true,
         "ajaxSource": "cgi-bin/process.py",
         "deferRender": true,
+        // "bServerSide" : true,
         "fnServerData": function(sSource, aoData, fnCallback) {
           $.ajax({
               url: sSource,
               type: "GET",
               dataType: "json",
               success: function(data) {
+                console.time("load");
                 fnCallback(add_ajax_data(data));
+                console.timeEnd("load");
               }
           })
         },
         "fnCreatedRow": function (nRow, aData, iDataIndex) {
-          console.log(nRow);
+          // console.log(nRow);
           // console.log(aData);
         },
         "aoColumnDefs": [{
@@ -38,7 +41,7 @@ $(document).ready(function() {
             [0, 'desc']
         ],
         "oLanguage": {
-            sLengthMenu: "每页显示 _MENU_ 条目",
+            "sLengthMenu": "每页显示 _MENU_ 条目",
             "sSearch": "搜索:",
             "sInfo": "_START_ - _END_ 条 共 _TOTAL_ 条",
             "sInfoEmpty": "共有0条记录",
@@ -50,7 +53,7 @@ $(document).ready(function() {
         },
         "pagingType": "simple_numbers"
     });
-
+    // $('#example').dataTable().fnUpdate(); //coll
     // $.ajax({
     //     url: "cgi-bin/process.py",
     //     type: "POST",
@@ -133,8 +136,17 @@ $(document).ready(function() {
 
     // 添加批量按钮
     $(Handlebars.compile($("#bat-function-template").html())(bat)).appendTo($row);
+
+    var teName = Handlebars.compile($("#td-name-template").html());
+    var teIP = Handlebars.compile($("#td-ip-template").html());
+    var teShow = Handlebars.compile($("#td-showInfo-template").html());
+    var teOp = Handlebars.compile($("#td-operation-template").html());
+    var teImg = Handlebars.compile($("#td-image-template").html());
+    var teSta = Handlebars.compile($("#td-status-template").html());
+    var teDat = Handlebars.compile($("#td-date-template").html());
     var i = 0;
     function add_ajax_data(data) {
+      // console.time('small loop');
       var data_source = data;
       var addArray = [];
       var allArray = [];
@@ -148,7 +160,7 @@ $(document).ready(function() {
         var name = data_source[item].name,
         id = item;
 
-        addArray.splice(2, 0, Handlebars.compile($("#td-name-template").html())({
+        addArray.splice(2, 0, teName({
           id: id,
           name: name
         }));
@@ -157,7 +169,7 @@ $(document).ready(function() {
         var public_ip = data_source[item].public_ip,
         private_ip = data_source[item].private_ip;
 
-        addArray.splice(3, 0, Handlebars.compile($("#td-ip-template").html())({
+        addArray.splice(3, 0, teIP({
           private_ip: private_ip,
           public_ip: public_ip
         }));
@@ -168,7 +180,7 @@ $(document).ready(function() {
         disk = data_source[item].full_flavor.disk,
         bandwidth = data_source[item].full_flavor.upload_bandwidth;
 
-        addArray.splice(4, 0, Handlebars.compile($("#td-showInfo-template").html())({
+        addArray.splice(4, 0, teShow({
           cpu: cpu,
           ram: ram,
           disk: disk,
@@ -177,7 +189,7 @@ $(document).ready(function() {
 
         // 处理操作
         context.ifcost = (data_source[item].billing == "" ? false : true);
-        addArray.splice(9, 0, Handlebars.compile($("#td-operation-template").html())(context));
+        addArray.splice(9, 0, teOp(context));
 
 
         // 处理镜像
@@ -185,23 +197,24 @@ $(document).ready(function() {
           image: data_source[item].image_name
         }
 
-        addArray.splice(5, 0, Handlebars.compile($("#td-image-template").html())(imageContext));
+        addArray.splice(5, 0, teImg(imageContext));
 
         // 处理状态
-        addArray.splice(6, 0, Handlebars.compile($("#td-status-template").html())({
+        addArray.splice(6, 0, teSta({
           status: data_source[item].status
         }));
 
         // 处理起始时间
-        addArray.splice(7, 0, Handlebars.compile($("#td-date-template").html())({
+        addArray.splice(7, 0, teDat({
           date: data_source[item].billing == "" ? data_source[item].created : data_source[item].auto_renewal_at
         }));
 
-        addArray.splice(8, 0, Handlebars.compile($("#td-date-template").html())({
+        addArray.splice(8, 0, teDat({
           date: data_source[item].billing == "" ? "按量" : "自动续费"
         }));
         allArray.push(addArray);
       }
+      // console.timeEnd('small loop');
       return {
         data: allArray
       }
